@@ -1,0 +1,10 @@
+/home/rustam/IdeaProjects/buyticket/buyticket-service/src/main/java/org/example/buyticket/app/rest/dto/base/BaseDTO.java
+/home/rustam/IdeaProjects/buyticket/buyticket-service/src/main/java/org/example/buyticket/app/service/transform/Transformer.java
+/home/rustam/IdeaProjects/buyticket/buyticket-service/src/main/java/org/example/buyticket/app/rest/service/base/BaseResource.java
+/home/rustam/IdeaProjects/buyticket/buyticket-service/src/main/java/org/example/buyticket/app/config/SpringConf.java
+/home/rustam/IdeaProjects/buyticket/buyticket-service/src/main/java/org/example/buyticket/app/service/impl/GeographicServiceImpl.java
+/home/rustam/IdeaProjects/buyticket/buyticket-service/src/main/java/org/example/buyticket/app/service/transform/impl/SimpleDTOTransformer.java
+/home/rustam/IdeaProjects/buyticket/buyticket-service/src/main/java/org/example/buyticket/app/rest/service/CityResource.java
+/home/rustam/IdeaProjects/buyticket/buyticket-service/src/main/java/org/example/buyticket/app/rest/service/config/JerseyApplication.java
+/home/rustam/IdeaProjects/buyticket/buyticket-service/src/main/java/org/example/buyticket/app/rest/dto/CityDTO.java
+/home/rustam/IdeaProjects/buyticket/buyticket-service/src/main/java/org/example/buyticket/app/service/GeographicService.java

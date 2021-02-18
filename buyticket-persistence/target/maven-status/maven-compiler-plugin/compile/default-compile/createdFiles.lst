@@ -1,0 +1,2 @@
+org/example/buyticket/app/persistence/repository/CityRepository.class
+org/example/buyticket/app/persistence/repository/inmemory/InMemoryCityRepository.class
