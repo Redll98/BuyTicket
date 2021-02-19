@@ -3,15 +3,11 @@ package org.example.buyticket.app.rest.service;
 import org.apache.commons.lang3.math.NumberUtils;
 import org.example.buyticket.app.model.entity.geography.City;
 import org.example.buyticket.app.model.entity.transport.TransportType;
-import org.example.buyticket.app.persistence.repository.inmemory.InMemoryCityRepository;
 import org.example.buyticket.app.rest.dto.CityDTO;
 import org.example.buyticket.app.rest.service.base.BaseResource;
 import org.example.buyticket.app.service.GeographicService;
-import org.example.buyticket.app.service.impl.GeographicServiceImpl;
 import org.example.buyticket.app.service.transform.Transformer;
-import org.example.buyticket.app.service.transform.impl.SimpleDTOTransformer;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+
 
 import javax.inject.Inject;
 import javax.ws.rs.*;

@@ -5,7 +5,6 @@ import org.example.buyticket.app.model.entity.base.AbstractEntity;
 import org.example.buyticket.app.model.entity.transport.TransportType;
 
 import javax.persistence.*;
-import java.time.LocalDateTime;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
