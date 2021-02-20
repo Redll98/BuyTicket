@@ -44,7 +44,7 @@ public class HibernateCityRepository implements CityRepository {
     @Override
     public List<City> findAll() {
         try(Session session = sessionFactory.openSession()) {
-            return session.createSQLQuery("SELECT * FROM ").list();
+            return session.createCriteria(City.class).list();
         }
     }
 }

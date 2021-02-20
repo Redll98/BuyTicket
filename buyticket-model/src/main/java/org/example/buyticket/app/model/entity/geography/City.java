@@ -5,6 +5,9 @@ import org.example.buyticket.app.model.entity.base.AbstractEntity;
 import org.example.buyticket.app.model.entity.transport.TransportType;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
@@ -44,7 +47,9 @@ public class City extends AbstractEntity {
         this.name = name;
     }
 
-    @Column(name="NAME", nullable = false, length=32)
+    @NotNull
+    @Size(min = 2, max = 32)
+    @Column(name = "NAME", nullable = false, length=32)
     public String getName() {
         return name;
     }
@@ -53,6 +58,8 @@ public class City extends AbstractEntity {
         this.name = name;
     }
 
+    @NotNull
+    @Size(min = 2, max = 32)
     @Column(name="DISTRICT", nullable=false, length=32)
     public String getDistrict() {
         return district;
@@ -62,7 +69,9 @@ public class City extends AbstractEntity {
         this.district = district;
     }
 
-    @Column(name="REGION", nullable = false, length = 32, unique = true)
+    @NotNull
+    @Size(min = 2, max = 32)
+    @Column(name="REGION", nullable = false, length = 32)
     public String getRegion() {
         return region;
     }
@@ -72,7 +81,7 @@ public class City extends AbstractEntity {
         this.region = region;
     }
 
-    @OneToMany(cascade = CascadeType.ALL, fetch=FetchType.LAZY, mappedBy = "city", orphanRemoval = true)
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "city", orphanRemoval = true)
     public Set<Station> getStations() {
         return CommonUtil.getSafeSet(stations);
     }

@@ -40,7 +40,7 @@ public class Station extends AbstractEntity {
     }
 
     @ManyToOne(cascade = {}, fetch = FetchType.EAGER)
-    @JoinColumn(name="CITY_ID")
+    @JoinColumn(name = "CITY_ID")
     public City getCity() {
         return city;
     }
@@ -77,7 +77,7 @@ public class Station extends AbstractEntity {
     }
 
     @Enumerated
-    @Column(nullable=false, name="TRANSPORT_TYPE")
+    @Column(nullable = false, name = "TRANSPORT_TYPE")
     public TransportType getTransportType() {
         return transportType;
     }

@@ -66,7 +66,7 @@ public abstract class AbstractEntity {
         }
     }
 
-    @Column(name="MODIFIED_AT", updatable = false)
+    @Column(name="MODIFIED_AT", insertable = false)
     public LocalDateTime getModifiedAt() {
         return lastModificationDate;
     }
