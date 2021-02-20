@@ -17,6 +17,8 @@ import java.util.Objects;
 @Table(name="STATION")
 @Entity
 public class Station extends AbstractEntity {
+    public static final String FIELD_CITY = "city";
+
     private City city;
 
     private Address address;

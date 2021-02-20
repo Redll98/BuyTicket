@@ -7,15 +7,11 @@ import org.example.buyticket.app.model.search.criteria.StationCriteria;
 import org.example.buyticket.app.persistence.hibernate.SessionFactoryBuilder;
 import org.example.buyticket.app.persistence.repository.CityRepository;
 import org.example.buyticket.app.persistence.repository.hibernate.HibernateCityRepository;
-import org.example.buyticket.app.persistence.repository.inmemory.InMemoryCityRepository;
 import org.example.buyticket.app.service.GeographicService;
 
-import org.hibernate.SessionFactory;
 import org.junit.AfterClass;
-import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import static org.junit.Assert.*;
 

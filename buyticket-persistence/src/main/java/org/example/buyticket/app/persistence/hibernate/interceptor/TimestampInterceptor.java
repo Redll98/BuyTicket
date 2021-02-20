@@ -16,7 +16,7 @@ public class TimestampInterceptor extends EmptyInterceptor {
     public boolean onSave(Object entity, Serializable id, Object[] state, String[] propertyNames, Type[] types) {
         int idx = ArrayUtils.indexOf(propertyNames, AbstractEntity.FIELD_CREATED_AT);
         if (idx >= 0) {
-            state[idx] = ArrayUtils.indexOf(propertyNames, AbstractEntity.FIELD_CREATED_AT);
+            state[idx] = LocalDateTime.now();
             return true;
         }
         return false;

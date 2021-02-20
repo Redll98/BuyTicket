@@ -1,6 +1,5 @@
 package org.example.buyticket.app.persistence.repository.hibernate;
 
-import org.example.buyticket.app.model.entity.base.AbstractEntity;
 import org.example.buyticket.app.model.entity.geography.City;
 import org.example.buyticket.app.persistence.repository.CityRepository;
 
@@ -45,7 +44,7 @@ public class HibernateCityRepository implements CityRepository {
     @Override
     public List<City> findAll() {
         try(Session session = sessionFactory.openSession()) {
-            return session.createSQLQuery("SELECT * FROM CITY").list();
+            return session.createSQLQuery("SELECT * FROM ").list();
         }
     }
 }

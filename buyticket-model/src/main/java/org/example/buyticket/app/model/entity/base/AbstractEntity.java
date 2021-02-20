@@ -50,7 +50,7 @@ public abstract class AbstractEntity {
         this.id = id;
     }
 
-    @Column(name="CREATED_AT", updatable = false)
+    @Column(name="CREATED_AT", nullable = false, updatable = false)
     public LocalDateTime getCreatedAt() {
         return creationDate;
     }
@@ -67,11 +67,11 @@ public abstract class AbstractEntity {
     }
 
     @Column(name="MODIFIED_AT", updatable = false)
-    public LocalDateTime getLastModificationDate() {
+    public LocalDateTime getModifiedAt() {
         return lastModificationDate;
     }
 
-    public void setLastModificationDate(LocalDateTime lastModificationDate) {
+    public void setModifiedAt(LocalDateTime lastModificationDate) {
         this.lastModificationDate = lastModificationDate;
     }
 
